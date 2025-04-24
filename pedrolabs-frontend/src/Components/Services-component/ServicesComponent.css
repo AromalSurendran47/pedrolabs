@@ -1,0 +1,146 @@
+.service-item {
+    position: relative;
+    text-align: center;
+}
+
+.servicesComponent-title h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+
+.servicesComponent-title p {
+    text-align: center;
+    color: #ff0500;
+    font-family: "Open Sans", serif;
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.servicesComponent-title p::before,
+.servicesComponent-title p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #ff0500;
+}
+
+.servicesComponent-title p::before {
+    left: -60px;
+}
+
+.servicesComponent-title p::after {
+    right: -60px;
+}
+
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.service-item:hover .service-img img {
+    transform: scale(1);
+}
+
+.service-text {
+    background: #ffffff;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.service-item:hover .service-text {
+    background: rgba(66, 15, 15, 0.6);
+}
+
+.service-text h4,
+.service-text p {
+    transition: 0.3s;
+}
+
+.service-text h4{
+    color: #ff0500;
+}
+
+.service-text h4 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+
+}
+
+
+.service-text p {
+
+    text-align: center;
+    font-family: "Open Sans", serif;
+
+}
+
+.service-item:hover .service-text h4  {
+    color: #ffffff;
+}
+
+.service-item:hover .service-text p {
+    /* color: var(--light); */
+    color: #ffffff;
+}
+
+
+
+.service-item:hover .serviceIcon {
+    color: #ffffff;
+}
+
+
+.btn-square {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.service-item:hover .btn-square {
+    background: var(--light);
+}
+
+.btn {
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: var(--light);
+    transition: 0.3s;
+}
+
+.service-item:hover .btn {
+    width: 112px;
+}
+
+@media (max-width: 768px) {
+    .service-item .service-text {
+        padding: 20px;
+    }
+}

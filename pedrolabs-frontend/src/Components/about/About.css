@@ -1,0 +1,71 @@
+/* General styling for the paragraph and heading */
+.about-paragraph {
+    text-align: justify;
+    font-family: "Open Sans", serif;
+}
+
+.about-heading {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Parent container for the image */
+.image-container {
+    perspective: 1500px;
+    /* Defines the depth of the 3D effect */
+    perspective-origin: center;
+    /* Center the perspective for the 3D effect */
+    display: inline-block;
+    /* Ensures the image container fits properly */
+}
+
+/* Initial styles for the image */
+.image-3d {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Smooth hover transition */
+    transform-origin: center;
+    /* Fixes the center point of the image */
+    width: 100%;
+    /* Ensure the image fills its container */
+    will-change: transform;
+    /* Improves rendering performance */
+
+    border-radius: 10px;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a shadow and 3D rotation when hovering */
+.image-container:hover .image-3d {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    /* Optional: Add shadow */
+    transform: perspective(1500px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
+
+.homepage-about-section {
+    margin-top: 75px !important;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .homepage-about-section {
+        margin-top: 40px !important;
+    }
+
+    .read-more-container {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-about-section {
+        margin-top: 40px !important;
+    }
+
+
+
+}

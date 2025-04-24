@@ -1,0 +1,11 @@
+.online-heading {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.online-paragraph {
+    text-align: justify;
+    font-family: "Open Sans", serif;
+    text-align: center;
+}

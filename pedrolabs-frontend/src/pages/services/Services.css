@@ -1,0 +1,7 @@
+/* Hide award section on small screens */
+@media (max-width: 768px) {
+    .hide-on-small {
+      display: none;
+    }
+  }
+  

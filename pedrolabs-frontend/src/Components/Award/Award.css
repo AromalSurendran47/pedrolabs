@@ -1,0 +1,74 @@
+.award-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-highlight {
+    color: #bd3734;
+}
+
+.experience {
+    font-size: 1.25rem;
+    color: #bd3734;
+    margin-bottom: 1.5rem;
+}
+
+.title-text {
+    color: #343a40;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+}
+
+.main-text-section h1{
+    font-family: "Playfair Display", serif;
+}
+
+.description {
+    color: #6c757d;
+    line-height: 1.7;
+
+    font-family: "Open Sans", serif;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h4 {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #343a40;
+    font-family: "Playfair Display", serif;
+}
+
+.feature-box p {
+
+    font-family: "Open Sans", serif;
+}
+
+@media (max-width: 768px) {
+    .award-section {
+        text-align: center;
+    }
+
+    .feature-box {
+        padding: 1.5rem;
+    }
+
+    .text-center {
+        margin-bottom: 2rem;
+    }
+}

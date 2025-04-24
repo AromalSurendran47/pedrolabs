@@ -1,0 +1,67 @@
+/* AuthForm.css */
+
+.auth-container {
+    background: url('https://img.freepik.com/free-vector/medical-technology-science-background-vector-blue-with-blank-space_53876-117739.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+  }
+  
+  .auth-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  button.w-100 {
+    background-color: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.w-100:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .auth-toggle-btn {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .auth-toggle-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-card .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .auth-container .min-vh-100 {
+    min-height: 100vh;
+  }
+  
+  .card-body {
+    padding: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    .auth-card {
+      padding: 20px;
+    }
+  }
+  

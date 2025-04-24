@@ -1,0 +1,93 @@
+.faq-section .accordion-item {
+  border: none;
+}
+
+.faq-section .accordion-header {
+  font-size: 1rem;
+  color: var(--bs-secondary);
+}
+
+.faq-section .accordion-header .collapsed {
+  color: var(--bs-dark);
+}
+
+.faqDiv h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.faqDiv p{
+  font-family: "Open Sans", serif;
+}
+
+.faqComponent-title {
+  text-align: center;
+  color: #ff0500;
+  font-family: "Open Sans", serif;
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.faqComponent-title::before,
+.faqComponent-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: #ff0500;
+}
+
+.faqComponent-title::before {
+  left: -60px;
+}
+
+.faqComponent-title::after {
+  right: -60px;
+}
+
+/* Parent container for the image */
+.image-container {
+  perspective: 1500px;
+  /* Defines the depth of the 3D effect */
+  perspective-origin: center;
+  /* Center the perspective for the 3D effect */
+  display: inline-block;
+  /* Ensures the image container fits properly */
+}
+
+/* Initial styles for the image */
+.image-3d {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth hover transition */
+  transform-origin: center;
+  /* Fixes the center point of the image */
+  width: 100%;
+  /* Ensure the image fills its container */
+  will-change: transform;
+  /* Improves rendering performance */
+
+  border-radius: 10px;
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a shadow and 3D rotation when hovering */
+.image-container:hover .image-3d {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  /* Optional: Add shadow */
+  transform: perspective(1500px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-section .text-center h1 {
+    font-size: 2rem;
+  }
+
+  .faq-section .accordion {
+    padding: 1rem;
+  }
+}

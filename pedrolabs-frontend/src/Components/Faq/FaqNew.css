@@ -1,0 +1,58 @@
+.FaqNew-heading {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.faqNewContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.FaqNew-accordion-item {
+    border: 1px solid #e5e5e5;
+}
+
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    /* Center the accordion */
+}
+
+.FaqNew-accordion-heading {
+    font-family: "Playfair Display", serif;
+
+}
+
+.FaqNew-accordion-content {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+}
+
+.accordion-button {
+    background-color: #fff;
+    font-size: 1.15rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #cbcfcf;
+    color: rgb(178, 167, 167);
+}
+
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .faqNewContainer{
+        margin-top: 30px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+}

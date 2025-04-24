@@ -1,0 +1,22 @@
+# Node modules in backend and frontend
+pedrolabs-backend/node_modules/
+pedrolabs-frontend/node_modules/
+
+# Build files
+pedrolabs-backend/dist/
+pedrolabs-frontend/dist/
+
+# Logs
+*.log
+
+# Environment files
+pedrolabs-backend/.env
+pedrolabs-frontend/.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

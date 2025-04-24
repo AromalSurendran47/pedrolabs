@@ -1,0 +1,37 @@
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mode-icons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mode-icons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 50px;
+  }
+}
+
+.gg-sun,
+.gg-moon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}

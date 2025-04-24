@@ -1,0 +1,169 @@
+/* Default header styles */
+.header-container {
+  background-color: transparent;
+  /* Default transparent background */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition */
+}
+
+.header-container .navbar-nav .headerMenus {
+  font-family: 'Roboto', sans-serif;
+  /* Use the desired font */
+  font-size: 14px;
+  /* Adjust font size */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+  padding-top: 8px;
+  padding-left: 20px;
+
+  color: inherit;
+  /* Inherit the text color from parent element */
+}
+
+/* Styles when the user scrolls */
+.header-container.scrolled {
+  background-color: #ffffff;
+  /* Background color when scrolled */
+  color: #000000;
+  /* Text color when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for the header */
+}
+
+/* Hover effect for navbar links */
+.header-container .navbar-nav .headerMenus:hover {
+  color: #ff0500 !important;
+  /* Change the hover color */
+}
+
+/* Active link style */
+.header-container .navbar-nav .headerMenus.active {
+  color: #ff0500 !important;
+  /* Active link color */
+}
+
+/* Icon styles */
+.icon-div i {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: #343a40;
+  /* Smooth color transition */
+}
+
+/* Hover effect for icons */
+.icon-div i:hover {
+  color: #ff0500;
+  /* Change color on hover */
+}
+
+/* Active icon style (when clicked) */
+.icon-div i.active {
+  color: #ff0500;
+  /* Change the active icon color */
+  font-size: 22px;
+  /* Increase the size of the active icon */
+}
+
+/* Search bar styles */
+.header-container form {
+  width: 50%;
+  margin-right: auto;
+}
+
+.icon-div {
+  display: flex;
+  gap: 20px;
+  
+}
+
+
+
+/* Make navbar items stack vertically in smaller screens */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: end;
+    width: 100%;
+  }
+
+  .headerMenus {
+    margin-right: 30px;
+  }
+
+
+
+  .navbar-toggler {
+    border: none !important;
+    padding: 0 !important;
+    /* Remove any unwanted padding */
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+  }
+
+  .burgerMenu i {
+    margin-right: 10px;
+  }
+
+  .searchbar {
+    margin-left: 10px;
+  }
+
+  .icon-div {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+  #navbarScroll {
+    margin-bottom: 10px;
+  }
+
+
+}
+
+/* Modal styling */
+.modal-header-custom {
+  background-color: #f8f9fa !important;
+  color: #343a40 !important;
+  border-bottom: none !important;
+}
+
+.modal-body-custom {
+  padding: 1.5rem !important;
+  background-color: #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.custom-input {
+  font-size: 0.9rem !important;
+  background-color: #f7f7f7 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 6px !important;
+  padding: 0.4rem !important;
+}
+
+.custom-input:focus {
+  outline: none !important;
+  border-color: #007bff !important;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5) !important;
+}
+
+.custom-modal .modal-dialog {
+  margin: 0 auto;
+  max-width: 400px;
+  /* Adjust width as needed */
+}
+
+.custom-modal .modal-content {
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

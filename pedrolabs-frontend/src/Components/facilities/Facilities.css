@@ -1,0 +1,85 @@
+.facilities-paragraph {
+  text-align: justify;
+  font-family: "Open Sans", serif;
+}
+
+.facilities-heading {
+  font-family: "Playfair Display", serif !important;
+  
+  font-weight: 600 !important;
+ 
+  
+}
+
+
+.facilities-title {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.card {
+  overflow: hidden; /* Prevents the image from going outside the card */
+}
+
+.card-img {
+  transition: transform 0.8s ease-in-out; /* Smooth transition for scaling */
+  object-fit: cover; /* Ensures the image covers the area of the container */
+  border-radius: 0 !important;
+}
+
+.card-img:hover {
+  transform: scale(1.1); /* Zooms the image out */
+}
+
+
+
+.read-more-container {
+  margin-top: 10px;
+  position: relative; /* Allows adding pseudo-elements */
+  display: flex; /* Enables alignment */
+  justify-content: flex-end; /* Pushes the content to the right */
+}
+
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500; /* Slightly bolder for better emphasis */
+  color: #2a74c9; /* Attractive blue color */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  position: relative; /* For pseudo-elements */
+  padding-right: 10px; /* Adds spacing for better aesthetics */
+}
+
+.read-more-link i {
+  margin-left: 5px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out; /* Smooth movement on hover */
+}
+
+.read-more-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: -2px;
+  left: 0;
+  background-color: #2a74c9; /* Matches the link color */
+  transition: width 0.3s ease-in-out; /* Smooth expansion effect */
+  
+}
+
+.read-more-link:hover {
+  color: #ff0500; /* Darker blue on hover */
+  padding-right: 10px; /* Expands slightly to the right */
+}
+
+.read-more-link:hover::after {
+  width: 50%; /* Expands underline effect on hover */
+}
+
+.read-more-link:hover i {
+  transform: translateX(8px); /* Moves arrow icon slightly to the right */
+}

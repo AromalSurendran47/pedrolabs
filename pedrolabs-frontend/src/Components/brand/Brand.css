@@ -1,0 +1,20 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-30%); /* Moves 50% of the total width */
+    }
+  }
+  
+  .marquee {
+    display: flex;
+    width: 100%;
+    animation: marquee 10s linear infinite;
+  }
+  
+  #clients {
+    overflow: hidden;
+    width: 100%;
+  }
+  

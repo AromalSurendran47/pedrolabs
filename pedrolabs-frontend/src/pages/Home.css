@@ -1,0 +1,47 @@
+.grey-shape {
+  position: absolute;
+  top: 800px;
+  right: 0;
+  width: 500px;
+  /* Reduced width for a slimmer shape */
+  height: 500px;
+  /* Adjust height for the desired oval shape */
+  background-color: #e6e2e2;
+  /* Light grey shade */
+  border-radius: 100px 0 0 600px;
+  /* Creates an oval-like curve on the left side */
+  transform: translateX(0);
+  /* Moves the shape partially off-screen for a seamless right-end placement */
+  z-index: -1;
+  /* Places the shape behind the content */
+}
+
+.grey-shape-2 {
+  position: absolute;
+  top: 1700px;
+  left: 0;
+  width: 500px;
+  /* Reduced width for a slimmer shape */
+  height: 500px;
+  /* Adjust height for the desired oval shape */
+  background-color: #e6e2e2;
+  /* Light grey shade */
+  border-radius: 0 400px 800px 0;
+  /* Creates an oval-like curve on the left side */
+  transform: translateX(0);
+  /* Moves the shape partially off-screen for a seamless right-end placement */
+  z-index: -1;
+  /* Places the shape behind the content */
+}
+
+@media (max-width: 768px) {
+
+  .grey-shape,
+  .grey-shape-2 {
+    display: none;
+  }
+
+  .banner-image{
+    height: 250px;
+  }
+}

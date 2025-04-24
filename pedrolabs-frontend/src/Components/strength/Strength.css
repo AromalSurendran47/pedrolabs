@@ -1,0 +1,137 @@
+.faqContainer {
+    padding: 20px;
+    background: url("../facilities/360_F_485934681_FjwxqkBDk9lLnQsM8yVdHC9hKf49Tis3.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .faqContainer:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .counter-section {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .strength-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .counter-wrap {
+    flex: 0 0 auto;
+    max-width: 180px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .counter-wrap:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .counter-icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .counter-icon {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .counter-content {
+    text-align: left;
+  }
+  
+  .timer {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .count-description {
+    display: block;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .white {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .counter-wrap {
+      max-width: 150px;
+      padding: 8px;
+    }
+  
+    .counter-icon {
+      font-size: 1.5rem;
+    }
+  
+    .timer {
+      font-size: 1.5rem;
+    }
+  
+    .count-description {
+      font-size: 0.9rem;
+    }
+  
+    .white {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .counter-wrap {
+      max-width: 100px;
+      padding: 5px;
+    }
+  
+    .counter-icon {
+      font-size: 1.2rem;
+    }
+  
+    .timer {
+      font-size: 1.2rem;
+    }
+  
+    .count-description {
+      font-size: 0.8rem;
+    }
+  
+    .white {
+      font-size: 1.2rem;
+    }
+  }
+  
