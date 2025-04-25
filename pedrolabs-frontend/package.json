@@ -1,7 +1,7 @@
 {
   "name": "pedrolabs",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "http://35.154.208.64:3001",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

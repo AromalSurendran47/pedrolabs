@@ -9,7 +9,7 @@ const SignInSignUpForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [registerStatus, setRegisterStatus] = useState("");
-  const baseURL = "http://localhost:3001"; // Backend API URL
+  const baseURL = "http://35.154.208.64:3001"; // Backend API URL
 
   const register = (e) => {
     e.preventDefault();

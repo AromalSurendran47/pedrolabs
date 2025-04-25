@@ -23,7 +23,7 @@ function Test() {
       formData.append("image", image);
 
       const response = await axios.post(
-        "http://localhost:3001/product",
+        "http://35.154.208.64:3001/product",
         formData,
         {
           headers: {

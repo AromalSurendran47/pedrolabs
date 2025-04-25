@@ -13,7 +13,7 @@ function Product() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({}); // Track added quantities
   const [userName, setUserName] = useState(""); // userName state
-  const baseURL = "http://localhost:3001";
+  const baseURL = "http://35.154.208.64:3001";
 
   const navigate = useNavigate();
 

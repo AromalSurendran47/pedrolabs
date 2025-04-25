@@ -13,7 +13,7 @@ function Authnew() {
   const [confirmPassword, setConfirmPassword] = useState(""); // Added for Confirm Password
   const [registerStatus, setRegisterStatus] = useState("");
   const navigate = useNavigate();
-  const baseURL = "http://localhost:3001"; // Backend API URL
+  const baseURL = "http://35.154.208.64:3001"; // Backend API URL
 
   // **Function to handle user registration**
   const handleRegister = (e) => {

@@ -15,7 +15,7 @@ import axios from "axios";
 
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
-  const baseURL = "http://localhost:3001";
+  const baseURL = "http://35.154.208.64:3001";
 
   // fetch products
 

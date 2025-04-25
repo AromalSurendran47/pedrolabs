@@ -15,7 +15,7 @@ function SingleProduct() {
   const [userName, setUserName] = useState("");
   const [cart, setCart] = useState({});
 
-  const baseURL = "http://localhost:3001";
+  const baseURL = "http://35.154.208.64:3001";
 
   useEffect(() => {
     const name = sessionStorage.getItem("userName");

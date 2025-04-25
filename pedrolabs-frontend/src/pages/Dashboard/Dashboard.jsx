@@ -7,7 +7,7 @@ import Preloader from "../../Components/Preloader/Preloader";
 import Header from "../../Components/Header";
 
 function Dashboard() {
-  const baseURL = "http://localhost:3001";
+  const baseURL = "http://35.154.208.64:3001";
 
   // State Management
   const [users, setUsers] = useState([]);
