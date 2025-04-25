@@ -38,7 +38,7 @@ function AboutUs() {
       localStorage.removeItem("cart"); //  Clear cart from localStorage
       setUserName(""); // Reset the userName state
       setCart({}); //  Reset cart state in React
-      window.location.href = "/authnew"; // Redirect to login page
+      window.location.href = "/"; // Redirect to login page
     };
 
   useEffect(() => {
