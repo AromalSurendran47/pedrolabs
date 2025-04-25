@@ -112,12 +112,11 @@ function Footer() {
                   <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                   <p>
                     <MDBIcon icon="home" className="me-2" />
-                    Pedro Labs Private Limited ,2nd floor,Golden Plaza,Tb
-                    juction,Angamaly
+                    New York, NY 10012, US
                   </p>
                   <p>
                     <MDBIcon icon="envelope" className="me-3" />
-                    pedrolabs1@gmail.com
+                    info@example.com
                   </p>
                   <p>
                     <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
@@ -131,9 +130,9 @@ function Footer() {
           </section>
 
           <div className="text-center p-3">
-            © 2025 Copyright:
+          © 2025 Copyright: MDBootstrap.com
             <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-              Design by Infosil Technolabs
+              
             </a>
           </div>
         </MDBFooter>
