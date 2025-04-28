@@ -96,6 +96,16 @@ function Header({ userName, handleLogout, cart }) {
                 ABOUT
               </Link>
               <Link
+  to="/product"
+  className={`headerMenus ${
+    location.pathname === "/product" ? "active" : ""
+  }`}
+  onClick={handleNavItemClick}
+>
+  PRODUCTS
+</Link>
+
+              <Link
                 to="/services"
                 className={`headerMenus ${
                   location.pathname === "/services" ? "active" : ""
@@ -104,24 +114,17 @@ function Header({ userName, handleLogout, cart }) {
               >
                 SERVICES
               </Link>
-              <Link
-                to="/product"
-                className={`headerMenus ${
-                  location.pathname === "/product" ? "active" : ""
-                }`}
-                onClick={handleNavItemClick} // Close navbar on click
-              >
-                PRODUCTS
-              </Link>
+
+
             </Nav>
-            <Form className="d-flex searchbar">
+            {/* <Form className="d-flex searchbar">
               <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
               />
-            </Form>
+            </Form> */}
             <div className="icon-div">
               <Link to="/dashboard">
                 <i class="fa-solid fa-list-check"></i>
@@ -181,65 +184,7 @@ function Header({ userName, handleLogout, cart }) {
         </Container>
       </Navbar>
 
-      {/* <Modal
-        show={showModal}
-        onHide={handleClose}
-        centered
-        dialogClassName="custom-modal"
-      >
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <form>
-            <MDBRow className="mb-3">
-              <MDBCol>
-                <MDBInput id="form3Example1" label="First name" />
-              </MDBCol>
-              <MDBCol>
-                <MDBInput id="form3Example2" label="Last name" />
-              </MDBCol>
-            </MDBRow>
-            <MDBInput
-              className="mb-3"
-              type="email"
-              id="form3Example3"
-              label="Email address"
-            />
-            <MDBInput
-              className="mb-3"
-              type="password"
-              id="form3Example4"
-              label="Password"
-            />
 
-            <MDBBtn type="submit" className="mb-3" block>
-              Sign in
-            </MDBBtn>
-
-            <div className="text-center">
-              <p>
-                Not a member? <a href="#!">Register</a>
-              </p>
-              <p>or sign up with:</p>
-
-              <MDBBtn floating color="secondary" className="mx-1">
-                <MDBIcon fab icon="facebook-f" />
-              </MDBBtn>
-
-              <MDBBtn floating color="secondary" className="mx-1">
-                <MDBIcon fab icon="google" />
-              </MDBBtn>
-
-              <MDBBtn floating color="secondary" className="mx-1">
-                <MDBIcon fab icon="twitter" />
-              </MDBBtn>
-
-              <MDBBtn floating color="secondary" className="mx-1">
-                <MDBIcon fab icon="github" />
-              </MDBBtn>
-            </div>
-          </form>
-        </Modal.Body>
-      </Modal> */}
     </div>
   );
 }
